@@ -11,7 +11,7 @@ import UIKit
 // UIViewRepresentable для UISlider
 struct SliderScreen: UIViewRepresentable {
     
-    @Binding var value: Float  // Привязка значения из SwiftUI
+    @Binding var value: Float
     
     class Coordinator: NSObject {
         var parent: SliderScreen
@@ -20,18 +20,15 @@ struct SliderScreen: UIViewRepresentable {
             self.parent = parent
         }
         
-        // Обработка изменения значения слайдера
         @objc func valueChanged(_ sender: UISlider) {
             parent.value = sender.value
         }
     }
     
-    // Создание координатора
     func makeCoordinator() -> Coordinator {
         Coordinator(parent: self)
     }
     
-    // Создание UIView (UISlider)
     func makeUIView(context: Context) -> UISlider {
         let slider = UISlider()
         slider.minimumValue = 0
@@ -41,7 +38,6 @@ struct SliderScreen: UIViewRepresentable {
         return slider
     }
     
-    // Обновление UIView
     func updateUIView(_ uiView: UISlider, context: Context) {
         uiView.value = value
     }
