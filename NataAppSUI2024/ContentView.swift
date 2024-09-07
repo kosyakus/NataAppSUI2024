@@ -24,7 +24,7 @@ struct ContentView: View {
                 .tabItem {
                     Label("Profile", systemImage: "person")
                 }
-            DashboardScreen()
+            DashboardScreen(selectedItem: $selectedItem)
                 .tag(1)
                 .tabItem {
                     Label("Dashboard", systemImage: "star")

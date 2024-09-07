@@ -40,15 +40,16 @@ struct DashboardScreen: View {
     
     @State var foodTitle: String = "My food"
     @StateObject var foodModel: FoodModel = .init()
+    @Binding var selectedItem: Int?
     
     var body: some View {
         NavigationView {
-            FoodScreen(title: $foodTitle)
+            FoodScreen(title: $foodTitle, selectedItem: $selectedItem)
                 .environmentObject(foodModel)
                 .navigationTitle(foodTitle)
-//            NavigationLink(destination: FoodScreen(title: $foodTitle).environmentObject(foodModel)){
-//                Text("Food")
-//            }
+            //            NavigationLink(destination: FoodScreen(title: $foodTitle).environmentObject(foodModel)){
+            //                Text("Food")
+            //            }
         }
     }
 }
@@ -57,16 +58,16 @@ struct FoodScreen: View {
     /// ни в Binding, ни в - не можем поставить значения
     @Binding var title: String
     @EnvironmentObject var foodModel: FoodModel
+    @Binding var selectedItem: Int?
     
     var body: some View {
         VStack {
-//            Text(title).font(.largeTitle)
+            //            Text(title).font(.largeTitle)
             List {
-                ForEach(foodModel.foods) { item in
-                    if !foodModel.isCatsFood || item.isFavourite {
-                        NavigationLink(destination: Text(item.name).font(.system(size: 250))) {
-                            Text(item.name)
-                        }
+                ForEach(Array(foodModel.foods.enumerated()), id: \.element.id) { index, item in
+                    NavigationLink(destination: Text(item.name).font(.system(size: 250)),
+                                   tag: index, selection: $selectedItem) {
+                        Text(item.name)
                     }
                 }
                 Toggle(isOn: $foodModel.isCatsFood) {
@@ -79,11 +80,18 @@ struct FoodScreen: View {
                 }
             }
         }
+        .onAppear {
+            if let selectedItem = selectedItem {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                    self.selectedItem = selectedItem
+                }
+            }
+        }
     }
 }
 
 // MARK: - Preview
 
 #Preview {
-    DashboardScreen()
+    DashboardScreen(selectedItem: .constant(nil))
 }
