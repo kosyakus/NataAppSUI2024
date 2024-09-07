@@ -14,6 +14,7 @@
 		E15AAE512C8A3C8E00345219 /* DashboardScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15AAE502C8A3C8E00345219 /* DashboardScreen.swift */; };
 		E15AAE532C8A3E0F00345219 /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15AAE522C8A3E0F00345219 /* ProfileScreen.swift */; };
 		E15AAE552C8C745B00345219 /* ModalScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15AAE542C8C745B00345219 /* ModalScreen.swift */; };
+		E15AAE592C8C8BBB00345219 /* SliderScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15AAE582C8C8BBB00345219 /* SliderScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		E15AAE502C8A3C8E00345219 /* DashboardScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardScreen.swift; sourceTree = "<group>"; };
 		E15AAE522C8A3E0F00345219 /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
 		E15AAE542C8C745B00345219 /* ModalScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalScreen.swift; sourceTree = "<group>"; };
+		E15AAE582C8C8BBB00345219 /* SliderScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				E15AAE502C8A3C8E00345219 /* DashboardScreen.swift */,
 				E15AAE522C8A3E0F00345219 /* ProfileScreen.swift */,
 				E15AAE542C8C745B00345219 /* ModalScreen.swift */,
+				E15AAE582C8C8BBB00345219 /* SliderScreen.swift */,
 			);
 			path = NataAppSUI2024;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E15AAE592C8C8BBB00345219 /* SliderScreen.swift in Sources */,
 				E15AAE452C8A1CDD00345219 /* ContentView.swift in Sources */,
 				E15AAE552C8C745B00345219 /* ModalScreen.swift in Sources */,
 				E15AAE432C8A1CDD00345219 /* NataAppSUI2024App.swift in Sources */,
