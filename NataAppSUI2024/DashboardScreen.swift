@@ -43,9 +43,12 @@ struct DashboardScreen: View {
     
     var body: some View {
         NavigationView {
-            NavigationLink(destination: FoodScreen(title: $foodTitle).environmentObject(foodModel)){
-                Text("Food")
-            }
+            FoodScreen(title: $foodTitle)
+                .environmentObject(foodModel)
+                .navigationTitle(foodTitle)
+//            NavigationLink(destination: FoodScreen(title: $foodTitle).environmentObject(foodModel)){
+//                Text("Food")
+//            }
         }
     }
 }
@@ -57,7 +60,7 @@ struct FoodScreen: View {
     
     var body: some View {
         VStack {
-            Text(title).font(.largeTitle)
+//            Text(title).font(.largeTitle)
             List {
                 ForEach(foodModel.foods) { item in
                     if !foodModel.isCatsFood || item.isFavourite {

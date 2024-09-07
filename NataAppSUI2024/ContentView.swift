@@ -15,10 +15,17 @@ enum ScreenTab {
 struct ContentView: View {
     
     @State var tabSelection: Int = 0
+    @State var selectedItem: Int? = nil  // Для выбора пункта таблицы
+
     var body: some View {
         TabView(selection: $tabSelection) {
+            ProfileScreen(tabSelection: $tabSelection, selectedItem: $selectedItem)
+                .tag(2)
+                .tabItem {
+                    Label("Profile", systemImage: "person")
+                }
             DashboardScreen()
-                .tag(0)
+                .tag(1)
                 .tabItem {
                     Label("Dashboard", systemImage: "star")
                     /// как вариант создания таба
@@ -27,10 +34,10 @@ struct ContentView: View {
 //                        Image(systemName: "star")
 //                    }
                 }
-            ProfileScreen()
-                .tag(1)
+            ModalScreen()
+                .tag(2)
                 .tabItem {
-                    Label("Profile", systemImage: "person")
+                    Label("Modal", systemImage: "cat")
                 }
             /// Для таб вью - любая вью это экран. Хоть просто Text
         }
