@@ -11,6 +11,8 @@
 		E15AAE452C8A1CDD00345219 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15AAE442C8A1CDD00345219 /* ContentView.swift */; };
 		E15AAE472C8A1CDF00345219 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E15AAE462C8A1CDF00345219 /* Assets.xcassets */; };
 		E15AAE4A2C8A1CDF00345219 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E15AAE492C8A1CDF00345219 /* Preview Assets.xcassets */; };
+		E15AAE512C8A3C8E00345219 /* DashboardScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15AAE502C8A3C8E00345219 /* DashboardScreen.swift */; };
+		E15AAE532C8A3E0F00345219 /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15AAE522C8A3E0F00345219 /* ProfileScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		E15AAE442C8A1CDD00345219 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E15AAE462C8A1CDF00345219 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E15AAE492C8A1CDF00345219 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E15AAE502C8A3C8E00345219 /* DashboardScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardScreen.swift; sourceTree = "<group>"; };
+		E15AAE522C8A3E0F00345219 /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 				E15AAE442C8A1CDD00345219 /* ContentView.swift */,
 				E15AAE462C8A1CDF00345219 /* Assets.xcassets */,
 				E15AAE482C8A1CDF00345219 /* Preview Content */,
+				E15AAE502C8A3C8E00345219 /* DashboardScreen.swift */,
+				E15AAE522C8A3E0F00345219 /* ProfileScreen.swift */,
 			);
 			path = NataAppSUI2024;
 			sourceTree = "<group>";
@@ -139,6 +145,8 @@
 			files = (
 				E15AAE452C8A1CDD00345219 /* ContentView.swift in Sources */,
 				E15AAE432C8A1CDD00345219 /* NataAppSUI2024App.swift in Sources */,
+				E15AAE512C8A3C8E00345219 /* DashboardScreen.swift in Sources */,
+				E15AAE532C8A3E0F00345219 /* ProfileScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

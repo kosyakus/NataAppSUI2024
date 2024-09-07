@@ -7,15 +7,33 @@
 
 import SwiftUI
 
+/// Можно отрефакторить
+enum ScreenTab {
+    case dashboard, profile
+}
+
 struct ContentView: View {
+    
+    @State var tabSelection: Int = 0
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView(selection: $tabSelection) {
+            DashboardScreen()
+                .tag(0)
+                .tabItem {
+                    Label("Dashboard", systemImage: "star")
+                    /// как вариант создания таба
+//                    HStack {
+//                        Text("Dashboard")
+//                        Image(systemName: "star")
+//                    }
+                }
+            ProfileScreen()
+                .tag(1)
+                .tabItem {
+                    Label("Profile", systemImage: "person")
+                }
+            /// Для таб вью - любая вью это экран. Хоть просто Text
         }
-        .padding()
     }
 }
 
