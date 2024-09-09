@@ -39,7 +39,9 @@ final class FoodModel: ObservableObject {
 struct DashboardScreen: View {
     
     @State var foodTitle: String = "My food"
-    @StateObject var foodModel: FoodModel = .init()
+//    @StateObject var foodModel: FoodModel = .init()
+    @EnvironmentObject var foodModel: FoodModel
+    
     @Binding var selectedItem: Int?
     
     var body: some View {

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ProfileScreen: View {
-    @Binding var tabSelection: Int
+    @Binding var tabSelection: ScreenTab
     @Binding var selectedItem: Int?
     
     var body: some View {
@@ -18,7 +18,7 @@ struct ProfileScreen: View {
                 .padding()
             
             Button("Go to Dashboard Tab and Select Item 2") {
-                tabSelection = 1
+                tabSelection = ScreenTab.dashboard
                 selectedItem = 1
             }
         }
@@ -26,5 +26,5 @@ struct ProfileScreen: View {
 }
 
 #Preview {
-    ProfileScreen(tabSelection: .constant(0), selectedItem: .constant(nil))
+    ProfileScreen(tabSelection: .constant(.profile), selectedItem: .constant(nil))
 }
