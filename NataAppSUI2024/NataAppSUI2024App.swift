@@ -16,7 +16,7 @@ struct NataAppSUI2024App: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-//                .environmentObject(FoodModel())
+                .environmentObject(FoodModel())
                 .environmentObject(NewsVM())
         }.onChange(of: scenePhase, initial: true) { old, new in
             
@@ -29,4 +29,13 @@ struct NataAppSUI2024App: App {
             
         }
     }
+    
+    /// Можно прям здесь создать NavigationControllerView чтобы навигация была с самого начала приложение
+//    var body: some Scene {
+//        WindowGroup {
+//            NavigationControllerView(transition: .custom(.slide, .opacity)) {
+//                ContentView()
+//            }
+//        }
+//    }
 }
