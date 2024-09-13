@@ -30,6 +30,19 @@ struct NataAppSUI2024App: App {
         }
     }
     
+    /// Чтобы открыть приложение с помощью Deep Link
+    /// В браузере ввести: deepLinkName://
+//    var body: some Scene {
+//        WindowGroup {
+//            ContentView()
+//                .onOpenURL(perform: { url in
+//                    print("DeepLink: \(url)")
+//                })
+//        }
+//    }
+    
+    
+    
     /// Можно прям здесь создать NavigationControllerView чтобы навигация была с самого начала приложение
 //    var body: some Scene {
 //        WindowGroup {
