@@ -9,41 +9,45 @@ import SwiftUI
 
 /// Можно отрефакторить
 enum ScreenTab {
-    case dashboard, profile, news, navigation, full
+    case dashboard, profile, news, navigation, full, animation
 }
 
 @available(iOS 16.0, *)
 struct ContentView: View {
     
-    @State var tabSelected: ScreenTab = .full
+    @State var tabSelected: ScreenTab = .animation
     
     @State var selectedItem: Int? = nil  // Для выбора пункта таблицы
     @State private var sliderValue: Float = 50.0
     
     var body: some View {
         TabView(selection: $tabSelected) {
-            ProfileScreen(tabSelection: $tabSelected, selectedItem: $selectedItem)
-                .tag(ScreenTab.profile)
-                .tabItem {
-                    Label("Profile", systemImage: "person")
-                }
+//            ProfileScreen(tabSelection: $tabSelected, selectedItem: $selectedItem)
+//                .tag(ScreenTab.profile)
+//                .tabItem {
+//                    Label("Profile", systemImage: "person")
+//                }
             DashboardScreen(selectedItem: $selectedItem)
                 .tag(ScreenTab.dashboard)
                 .tabItem {
                     Label("Dashboard", systemImage: "star")
                 }
-            NewsScreen()
-                .tag(ScreenTab.news)
+            AnimationViewContainer(radius: 50)
+                .tag(ScreenTab.animation)
                 .tabItem {
-                    Label("News", systemImage: "newspaper")
+                    Label("Animation", systemImage: "wand.and.rays")
                 }
-            
-            FullScreenCoverScreen()
-                .tag(ScreenTab.full)
-                .tabItem {
-                    Label("Navi", systemImage: "location")
-                }
-            
+//            NewsScreen()
+//                .tag(ScreenTab.news)
+//                .tabItem {
+//                    Label("News", systemImage: "newspaper")
+//                }
+//            
+//            FullScreenCoverScreen()
+//                .tag(ScreenTab.full)
+//                .tabItem {
+//                    Label("Navi", systemImage: "location")
+//                }
             
             /// как вариант создания таба
             //                    HStack {

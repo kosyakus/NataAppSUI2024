@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E13737182C95EC6F00736F3D /* AnimationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13737172C95EC6F00736F3D /* AnimationScreen.swift */; };
+		E137371A2C95EDDA00736F3D /* CustomModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13737192C95EDDA00736F3D /* CustomModifier.swift */; };
+		E137371C2C95F0E100736F3D /* ShapeExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137371B2C95F0E100736F3D /* ShapeExample.swift */; };
+		E137371E2C95F9AE00736F3D /* AnimationViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137371D2C95F9AE00736F3D /* AnimationViewContainer.swift */; };
 		E15AAE432C8A1CDD00345219 /* NataAppSUI2024App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15AAE422C8A1CDD00345219 /* NataAppSUI2024App.swift */; };
 		E15AAE452C8A1CDD00345219 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15AAE442C8A1CDD00345219 /* ContentView.swift */; };
 		E15AAE472C8A1CDF00345219 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E15AAE462C8A1CDF00345219 /* Assets.xcassets */; };
@@ -30,6 +34,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E13737172C95EC6F00736F3D /* AnimationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationScreen.swift; sourceTree = "<group>"; };
+		E13737192C95EDDA00736F3D /* CustomModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifier.swift; sourceTree = "<group>"; };
+		E137371B2C95F0E100736F3D /* ShapeExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeExample.swift; sourceTree = "<group>"; };
+		E137371D2C95F9AE00736F3D /* AnimationViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewContainer.swift; sourceTree = "<group>"; };
 		E15AAE3F2C8A1CDD00345219 /* NataAppSUI2024.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NataAppSUI2024.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E15AAE422C8A1CDD00345219 /* NataAppSUI2024App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NataAppSUI2024App.swift; sourceTree = "<group>"; };
 		E15AAE442C8A1CDD00345219 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -67,6 +75,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E13737162C95E87C00736F3D /* AnimationTutorial */ = {
+			isa = PBXGroup;
+			children = (
+				E137371D2C95F9AE00736F3D /* AnimationViewContainer.swift */,
+				E13737172C95EC6F00736F3D /* AnimationScreen.swift */,
+				E13737192C95EDDA00736F3D /* CustomModifier.swift */,
+				E137371B2C95F0E100736F3D /* ShapeExample.swift */,
+			);
+			path = AnimationTutorial;
+			sourceTree = "<group>";
+		};
 		E15AAE362C8A1CDC00345219 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +118,7 @@
 				E15AAE522C8A3E0F00345219 /* ProfileScreen.swift */,
 				E15AAE542C8C745B00345219 /* ModalScreen.swift */,
 				E15AAE582C8C8BBB00345219 /* SliderScreen.swift */,
+				E13737162C95E87C00736F3D /* AnimationTutorial */,
 				E18AD30C2C937257006A09A3 /* DeeplinkTutorial */,
 				E18AD3002C936A20006A09A3 /* NavigationTutorial */,
 			);
@@ -227,6 +247,8 @@
 			files = (
 				E18AD3082C936F11006A09A3 /* FullScreenCoverScreen.swift in Sources */,
 				E15AAE5F2C8EEE0800345219 /* NewsScreen.swift in Sources */,
+				E137371E2C95F9AE00736F3D /* AnimationViewContainer.swift in Sources */,
+				E137371C2C95F0E100736F3D /* ShapeExample.swift in Sources */,
 				E15AAE592C8C8BBB00345219 /* SliderScreen.swift in Sources */,
 				E15AAE452C8A1CDD00345219 /* ContentView.swift in Sources */,
 				E18AD30A2C936F96006A09A3 /* FullScreenChildView.swift in Sources */,
@@ -235,12 +257,14 @@
 				E15AAE552C8C745B00345219 /* ModalScreen.swift in Sources */,
 				E18AD3062C936BE7006A09A3 /* ThirdChildView.swift in Sources */,
 				E15AAE432C8A1CDD00345219 /* NataAppSUI2024App.swift in Sources */,
+				E13737182C95EC6F00736F3D /* AnimationScreen.swift in Sources */,
 				E18AD30E2C937273006A09A3 /* MyDeepLink.swift in Sources */,
 				E15AAE512C8A3C8E00345219 /* DashboardScreen.swift in Sources */,
 				E15AAE532C8A3E0F00345219 /* ProfileScreen.swift in Sources */,
 				E18AD2FF2C9364FC006A09A3 /* NavigationStackScreen.swift in Sources */,
 				E18AD3042C936A71006A09A3 /* FirstChildView.swift in Sources */,
 				E15AAE632C8F14B800345219 /* NewsVM.swift in Sources */,
+				E137371A2C95EDDA00736F3D /* CustomModifier.swift in Sources */,
 				E18AD3122C93736D006A09A3 /* DeepLinkAppViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
