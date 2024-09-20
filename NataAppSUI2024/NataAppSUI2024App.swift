@@ -13,11 +13,13 @@ struct NataAppSUI2024App: App {
     
     @Environment(\.scenePhase) var scenePhase
     
+    @StateObject var newsVM = NewsViewModel()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(FoodModel())
-                .environmentObject(NewsVM())
+//                .environmentObject(FoodModel())
+                .environmentObject(newsVM)
         }.onChange(of: scenePhase, initial: true) { old, new in
             
             switch new {

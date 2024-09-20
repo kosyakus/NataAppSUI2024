@@ -91,6 +91,6 @@ struct ListArticleCell: View {
     }
 }
 
-#Preview {
-    NewsScreen()
-}
+//#Preview {
+//    NewsScreen()
+//}
