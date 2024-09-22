@@ -64,6 +64,7 @@
 		E1B30D932CA01582003A118A /* NewsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B30D922CA01582003A118A /* NewsDetailView.swift */; };
 		E1B30D952CA015B8003A118A /* ExtraInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B30D942CA015B8003A118A /* ExtraInfoView.swift */; };
 		E1B30D972CA0161E003A118A /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B30D962CA0161E003A118A /* ArticleCell.swift */; };
+		E1B30D992CA05629003A118A /* UIView+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B30D982CA05629003A118A /* UIView+UIImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -127,6 +128,7 @@
 		E1B30D922CA01582003A118A /* NewsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailView.swift; sourceTree = "<group>"; };
 		E1B30D942CA015B8003A118A /* ExtraInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraInfoView.swift; sourceTree = "<group>"; };
 		E1B30D962CA0161E003A118A /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
+		E1B30D982CA05629003A118A /* UIView+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+UIImage.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +232,7 @@
 			children = (
 				E13737642C9C9B7100736F3D /* Collections+Check.swift */,
 				E13737662C9C9D6900736F3D /* ModelCharacter+Identifable.swift */,
+				E1B30D982CA05629003A118A /* UIView+UIImage.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -434,6 +437,7 @@
 				E13737542C9C49CF00736F3D /* Models.swift in Sources */,
 				E18AD3062C936BE7006A09A3 /* ThirdChildView.swift in Sources */,
 				E15AAE432C8A1CDD00345219 /* NataAppSUI2024App.swift in Sources */,
+				E1B30D992CA05629003A118A /* UIView+UIImage.swift in Sources */,
 				E13737182C95EC6F00736F3D /* AnimationScreen.swift in Sources */,
 				E137374D2C9C49CF00736F3D /* APIHelper.swift in Sources */,
 				E137374C2C9C49CF00736F3D /* ModelCharacter.swift in Sources */,

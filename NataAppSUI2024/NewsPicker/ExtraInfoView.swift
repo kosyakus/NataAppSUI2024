@@ -33,8 +33,6 @@ struct ExtraInfoView: View {
                 Text(relatedArticle.description ?? "Нет описания для похожей статьи")
                     .padding()
                 
-                //                Link("Читать больше", destination: URL(string: relatedArticle.url)!)
-                //                    .padding()
             } else {
                 Text("Загружаем похожие статьи...")
             }
