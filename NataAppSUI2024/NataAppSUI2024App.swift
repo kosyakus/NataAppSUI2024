@@ -13,7 +13,7 @@ struct NataAppSUI2024App: App {
     
     @Environment(\.scenePhase) var scenePhase
     
-    @StateObject var newsVM = NewsViewModel()
+    @StateObject var newsVM = NewsPagingViewModel()
     
     var body: some Scene {
         WindowGroup {
