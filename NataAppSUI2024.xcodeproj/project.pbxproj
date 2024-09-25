@@ -69,6 +69,7 @@
 		E1B937F82CA427C700002BB1 /* CharactersAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B937F72CA427C700002BB1 /* CharactersAPIService.swift */; };
 		E1B937FA2CA4287700002BB1 /* CharactersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B937F92CA4287700002BB1 /* CharactersViewModel.swift */; };
 		E1B937FC2CA42C6C00002BB1 /* CharactersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B937FB2CA42C6C00002BB1 /* CharactersView.swift */; };
+		E1B937FE2CA42D7800002BB1 /* Injected.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B937FD2CA42D7600002BB1 /* Injected.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -137,6 +138,7 @@
 		E1B937F72CA427C700002BB1 /* CharactersAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersAPIService.swift; sourceTree = "<group>"; };
 		E1B937F92CA4287700002BB1 /* CharactersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewModel.swift; sourceTree = "<group>"; };
 		E1B937FB2CA42C6C00002BB1 /* CharactersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersView.swift; sourceTree = "<group>"; };
+		E1B937FD2CA42D7600002BB1 /* Injected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injected.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -350,6 +352,7 @@
 		E1B937F42CA3D9E000002BB1 /* ServiceLocator */ = {
 			isa = PBXGroup;
 			children = (
+				E1B937FD2CA42D7600002BB1 /* Injected.swift */,
 				E1B937F52CA3DA2C00002BB1 /* ServiceLocator.swift */,
 				E1B937F72CA427C700002BB1 /* CharactersAPIService.swift */,
 				E1B937F92CA4287700002BB1 /* CharactersViewModel.swift */,
@@ -466,6 +469,7 @@
 				E13737582C9C49CF00736F3D /* Validation.swift in Sources */,
 				E13737502C9C49CF00736F3D /* Configuration.swift in Sources */,
 				E18AD30E2C937273006A09A3 /* MyDeepLink.swift in Sources */,
+				E1B937FE2CA42D7800002BB1 /* Injected.swift in Sources */,
 				E15AAE512C8A3C8E00345219 /* DashboardScreen.swift in Sources */,
 				E1B937F82CA427C700002BB1 /* CharactersAPIService.swift in Sources */,
 				E15AAE532C8A3E0F00345219 /* ProfileScreen.swift in Sources */,

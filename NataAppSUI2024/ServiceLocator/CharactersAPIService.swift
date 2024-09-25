@@ -13,9 +13,9 @@ protocol CharactersAPIProtocol {
 
 class CharactersAPIService: CharactersAPIProtocol {
     func getAllCharacters(page: Int) async throws -> [ModelCharacter] {
-        // Вызов твоего существующего API
+        // Вызов существующего API
         guard let result = try? await CharactersAPI.getAllCharacters(page: page) else {
-            throw URLError(.badServerResponse) // или любой другой тип ошибки
+            throw URLError(.badServerResponse)
         }
         return result.results ?? []
     }

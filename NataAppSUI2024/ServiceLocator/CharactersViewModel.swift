@@ -12,15 +12,10 @@ class CharactersViewModel: ObservableObject {
     @Published var loadedCharacters: [ModelCharacter] = []
         @Published var canLoad = true
         
+        @Injected private var charactersAPI: CharactersAPIProtocol
+
         private var page = 1
         private var totalPages = 1000
-        
-        private let charactersAPI: CharactersAPIProtocol?
-
-        init() {
-            // Получаем API сервис через Service Locator
-            self.charactersAPI = ServiceLocator.shared.getService()
-        }
         
         func loadNext() {
             guard page <= totalPages else { return }
@@ -29,12 +24,6 @@ class CharactersViewModel: ObservableObject {
             canLoad = false
             Task { @MainActor in
                 sleep(3) // Для проверки
-
-                guard let charactersAPI = charactersAPI else {
-                    canLoad = true
-                    print("No API service available")
-                    return
-                }
 
                 // Используем API для получения данных
                 do {

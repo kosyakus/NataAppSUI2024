@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CharactersView: View {
-    @StateObject private var viewModel = PagingViewModel()
+    @StateObject private var viewModel = CharactersViewModel()
 
         var body: some View {
             List(viewModel.loadedCharacters, id: \.id) { character in
