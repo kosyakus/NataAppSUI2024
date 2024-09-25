@@ -11,6 +11,11 @@ import SwiftUI
 @main
 struct NataAppSUI2024App: App {
     
+    init() {
+        let charactersAPIService = CharactersAPIService()
+        ServiceLocator.shared.addService(service: charactersAPIService as CharactersAPIProtocol)
+    }
+    
     @Environment(\.scenePhase) var scenePhase
     
     @StateObject var newsVM = NewsPagingViewModel()
@@ -18,7 +23,7 @@ struct NataAppSUI2024App: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-//                .environmentObject(FoodModel())
+            //                .environmentObject(FoodModel())
                 .environmentObject(newsVM)
         }.onChange(of: scenePhase, initial: true) { old, new in
             
@@ -34,23 +39,23 @@ struct NataAppSUI2024App: App {
     
     /// Чтобы открыть приложение с помощью Deep Link
     /// В браузере ввести: deepLinkName://
-//    var body: some Scene {
-//        WindowGroup {
-//            ContentView()
-//                .onOpenURL(perform: { url in
-//                    print("DeepLink: \(url)")
-//                })
-//        }
-//    }
+    //    var body: some Scene {
+    //        WindowGroup {
+    //            ContentView()
+    //                .onOpenURL(perform: { url in
+    //                    print("DeepLink: \(url)")
+    //                })
+    //        }
+    //    }
     
     
     
     /// Можно прям здесь создать NavigationControllerView чтобы навигация была с самого начала приложение
-//    var body: some Scene {
-//        WindowGroup {
-//            NavigationControllerView(transition: .custom(.slide, .opacity)) {
-//                ContentView()
-//            }
-//        }
-//    }
+    //    var body: some Scene {
+    //        WindowGroup {
+    //            NavigationControllerView(transition: .custom(.slide, .opacity)) {
+    //                ContentView()
+    //            }
+    //        }
+    //    }
 }

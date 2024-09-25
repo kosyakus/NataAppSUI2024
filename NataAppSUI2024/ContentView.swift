@@ -9,7 +9,7 @@ import SwiftUI
 
 /// Можно отрефакторить
 enum ScreenTab {
-    case dashboard, profile, news, navigation, full, animation
+    case dashboard, profile, news, navigation, full, animation, characters
 }
 
 @available(iOS 16.0, *)
@@ -17,18 +17,14 @@ struct ContentView: View {
     
     @State var tabSelected: ScreenTab = .news
     
-    @State var selectedItem: Int? = nil  // Для выбора пункта таблицы
-    @State private var sliderValue: Float = 50.0
-    
     var body: some View {
         TabView(selection: $tabSelected) {
-
-            NewsPickerScreen()
-                .tag(ScreenTab.news)
+            
+            CharactersView()
+                .tag(ScreenTab.characters)
                 .tabItem {
-                    Label("News", systemImage: "newspaper")
+                    Label("Chars", systemImage: "figure")
                 }
-
         }
     }
 }
@@ -47,10 +43,20 @@ extension ContentView {
     }
 }
 
-@available(iOS 16.0, *)
-#Preview {
-    ContentView()
-}
+//@available(iOS 16.0, *)
+//#Preview {
+//    ContentView()
+//}
+
+
+
+
+
+
+
+
+//@State var selectedItem: Int? = nil  // Для выбора пункта таблицы
+//@State private var sliderValue: Float = 50.0
 
 
 //            ProfileScreen(tabSelection: $tabSelected, selectedItem: $selectedItem)
@@ -80,6 +86,12 @@ extension ContentView {
 //                        Text("Dashboard")
 //                        Image(systemName: "star")
 //                    }
+
+//NewsPickerScreen()
+//    .tag(ScreenTab.news)
+//    .tabItem {
+//        Label("News", systemImage: "newspaper")
+//    }
 
 //            ModalScreen()
 //                .tag(2)
