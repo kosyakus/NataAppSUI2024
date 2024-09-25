@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import StorageServicePackage
 
 @available(iOS 17.0, *)
 @main
@@ -16,7 +17,7 @@ struct NataAppSUI2024App: App {
         let charactersAPIService = CharactersAPIService()
         ServiceLocator.shared.addService(service: charactersAPIService as CharactersAPIProtocol)
         
-        // Регистрация StorageService в Service Locator
+        // Регистрация StorageService в Service Locator / затем изменено на SwiftPackages
         let storageService = StorageService()
         ServiceLocator.shared.addService(service: storageService as StorageServiceProtocol)
     }

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -71,6 +71,8 @@
 		E1B937FC2CA42C6C00002BB1 /* CharactersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B937FB2CA42C6C00002BB1 /* CharactersView.swift */; };
 		E1B937FE2CA42D7800002BB1 /* Injected.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B937FD2CA42D7600002BB1 /* Injected.swift */; };
 		E1B938002CA434AD00002BB1 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B937FF2CA434AB00002BB1 /* StorageService.swift */; };
+		E1B938062CA4538000002BB1 /* StorageServicePackage in Frameworks */ = {isa = PBXBuildFile; productRef = E1B938052CA4538000002BB1 /* StorageServicePackage */; };
+		E1B938092CA4570E00002BB1 /* StorageServicePackage in Frameworks */ = {isa = PBXBuildFile; productRef = E1B938082CA4570E00002BB1 /* StorageServicePackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -148,7 +150,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1B938092CA4570E00002BB1 /* StorageServicePackage in Frameworks */,
 				E15AAE5D2C8EED1F00345219 /* NewsAPI in Frameworks */,
+				E1B938062CA4538000002BB1 /* StorageServicePackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +386,8 @@
 			name = NataAppSUI2024;
 			packageProductDependencies = (
 				E15AAE5C2C8EED1F00345219 /* NewsAPI */,
+				E1B938052CA4538000002BB1 /* StorageServicePackage */,
+				E1B938082CA4570E00002BB1 /* StorageServicePackage */,
 			);
 			productName = NataAppSUI2024;
 			productReference = E15AAE3F2C8A1CDD00345219 /* NataAppSUI2024.app */;
@@ -411,6 +417,9 @@
 				Base,
 			);
 			mainGroup = E15AAE362C8A1CDC00345219;
+			packageReferences = (
+				E1B938072CA4570E00002BB1 /* XCLocalSwiftPackageReference "../../Packages" */,
+			);
 			productRefGroup = E15AAE402C8A1CDD00345219 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -708,10 +717,25 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		E1B938072CA4570E00002BB1 /* XCLocalSwiftPackageReference "../../Packages" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../../Packages;
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		E15AAE5C2C8EED1F00345219 /* NewsAPI */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = NewsAPI;
+		};
+		E1B938052CA4538000002BB1 /* StorageServicePackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = StorageServicePackage;
+		};
+		E1B938082CA4570E00002BB1 /* StorageServicePackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = StorageServicePackage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
