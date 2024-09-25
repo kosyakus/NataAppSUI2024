@@ -12,8 +12,13 @@ import SwiftUI
 struct NataAppSUI2024App: App {
     
     init() {
+        // Регистрация CharactersAPIService в Service Locator
         let charactersAPIService = CharactersAPIService()
         ServiceLocator.shared.addService(service: charactersAPIService as CharactersAPIProtocol)
+        
+        // Регистрация StorageService в Service Locator
+        let storageService = StorageService()
+        ServiceLocator.shared.addService(service: storageService as StorageServiceProtocol)
     }
     
     @Environment(\.scenePhase) var scenePhase
