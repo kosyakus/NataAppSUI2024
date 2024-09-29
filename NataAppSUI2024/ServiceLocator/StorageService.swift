@@ -5,6 +5,12 @@
 //  Created by Natalia Sinitsyna on 25.09.2024.
 //
 
+
+
+/// Вынесено в Package
+
+
+
 //import Foundation
 //
 //protocol StorageServiceProtocol {
